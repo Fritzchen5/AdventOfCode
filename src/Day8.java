@@ -14,7 +14,7 @@ public class Day8 {
             while ((readerLine = reader.readLine()) != null) {
                 if (readerLine.contains("=")) {
                     ArrayList<String> line = new ArrayList<>();
-                    String[] lineArray = readerLine.replaceAll("[\\)\\(]", "").split("( = )|(, )");
+                    String[] lineArray = readerLine.replaceAll("[)(]", "").split("( = )|(, )");
                     line.add(lineArray[0]);
                     line.add(lineArray[1]);
                     line.add(lineArray[2]);
