@@ -1,7 +1,6 @@
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.math.BigInteger;
 import java.util.ArrayList;
 
 public class Day1 {
@@ -9,18 +8,13 @@ public class Day1 {
         String[] numbers = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         ArrayList<ArrayList<Integer>> correct = new ArrayList<>();
 
-        BigInteger big1 = new BigInteger("1111111111111111111111111111111111111111111");
-        BigInteger big2 = new BigInteger("2222222222222222222222222222222222222222222");
-        BigInteger big3 = big1.add(big2);
-        System.out.println(big3);
-
         try (InputStream in = new FileInputStream("res/input1.txt")) {
             byte[] bytes = in.readAllBytes();
             String[] lines = new String(bytes).split("\n");
             int sum = 0;
             for (String s : lines) {
                 correct.clear();
-                for (String n : numbers) {
+                for (String ignored : numbers) {
                     ArrayList<Integer> part = new ArrayList<>();
                     correct.add(part);
                 }

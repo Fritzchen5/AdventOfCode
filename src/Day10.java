@@ -25,7 +25,7 @@ public class Day10 {
                 }
             }
             char last = ' ';
-            char nextDirection = ' ';
+            char nextDirection;
             int row = -1;
             int col = -1;
             char next = getPipeAt(pipes, startRow - 1, startCol, 'u');

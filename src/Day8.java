@@ -54,7 +54,7 @@ public class Day8 {
             }
         }
     }
-
+    /*
     public static long followInstructions2BruteForce(Map<String, String[]> dataMap, int[] instructions) {
         int startPositions = 0;
         char endsWithStart = 'A';
@@ -96,7 +96,7 @@ public class Day8 {
                 }
             }
         }
-    }
+    }*/
 
     public static long followInstructions2(Map<String, String[]> dataMap, int[] instructions) {
         int startPositions = 0;
