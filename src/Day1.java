@@ -7,7 +7,6 @@ public class Day1 {
     public static void main(String[] args) {
         String[] numbers = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         ArrayList<ArrayList<Integer>> correct = new ArrayList<>();
-
         try (InputStream in = new FileInputStream("res/input1.txt")) {
             byte[] bytes = in.readAllBytes();
             String[] lines = new String(bytes).split("\n");
