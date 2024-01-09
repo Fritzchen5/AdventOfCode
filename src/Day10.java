@@ -140,6 +140,7 @@ public class Day10 {
         }
     }
 
+    /*
     public static void findEnclosed(char[][] pipes, int row, int col) {
         pipes[row][col] = 'o';
         char c = getPipeAt(pipes, row, col, 'u');
@@ -150,7 +151,7 @@ public class Day10 {
         if (c != 'e' && c != 'p' && c != 'o' && c != 'S') findEnclosed(pipes, row + 1, col);
         c = getPipeAt(pipes, row, col, 'l');
         if (c != 'e' && c != 'p' && c != 'o' && c != 'S') findEnclosed(pipes, row, col - 1);
-    }
+    }*/
 
     public static char getPipeAt(char[][] pipes, int row, int col, char direction) {
         if (direction == 'u') row--;
