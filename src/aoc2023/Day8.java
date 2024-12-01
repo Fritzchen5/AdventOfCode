@@ -1,3 +1,5 @@
+package aoc2023;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -6,7 +8,7 @@ import java.util.stream.Collectors;
 
 public class Day8 {
     public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("res/input8.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("res/aoc2023/input8.txt"))) {
             ArrayList<ArrayList<String>> lines = new ArrayList<>();
             String readerLine;
             int[] instructions = new int[0];

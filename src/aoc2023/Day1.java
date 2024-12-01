@@ -1,3 +1,5 @@
+package aoc2023;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -7,7 +9,7 @@ public class Day1 {
     public static void main(String[] args) {
         String[] numbers = {"one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
         ArrayList<ArrayList<Integer>> correct = new ArrayList<>();
-        try (InputStream in = new FileInputStream("res/input1.txt")) {
+        try (InputStream in = new FileInputStream("res/aoc2023/input1.txt")) {
             byte[] bytes = in.readAllBytes();
             String[] lines = new String(bytes).split("\n");
             int sum = 0;

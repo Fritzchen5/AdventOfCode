@@ -1,3 +1,5 @@
+package aoc2023;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,7 +9,7 @@ import java.util.Map;
 
 public class Day7 {
     public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("res/input7.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("res/aoc2023/input7.txt"))) {
             ArrayList<String> lines = new ArrayList<>();
             String readerLine;
             while ((readerLine = reader.readLine()) != null) {

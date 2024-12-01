@@ -1,3 +1,5 @@
+package aoc2023;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -5,7 +7,7 @@ import java.util.List;
 
 public class Day4 {
     public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("res/input4.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("res/aoc2023/input4.txt"))) {
             List<String> lines = new ArrayList<>();
             ArrayList<Integer> scrachCardsAmountEach = new ArrayList<>();
             String readerLine;

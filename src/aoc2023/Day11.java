@@ -1,3 +1,5 @@
+package aoc2023;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -6,7 +8,7 @@ import java.util.ArrayList;
 public class Day11 {
     public static void main(String[] args) {
         int adding = 100000 - 1;
-        try (BufferedReader reader = new BufferedReader(new FileReader("res/input11.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("res/aoc2023/input11.txt"))) {
             String lineString;
             ArrayList<String> lines = new ArrayList<>();
             int row = 0;

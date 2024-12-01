@@ -1,3 +1,5 @@
+package aoc2023;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -5,7 +7,7 @@ import java.util.ArrayList;
 
 public class Day9 {
     public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("res/input9.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("res/aoc2023/input9.txt"))) {
             String line;
             int sum1 = 0;
             int sum2 = 0;
