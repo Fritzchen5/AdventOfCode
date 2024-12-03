@@ -27,13 +27,10 @@ public class Day1 {
             System.out.println(result1);
 
             int result2 = 0;
-            for (int i : list1) {
-                int occurrences = 0;
+            for (int i : list1)
                 for (int j : list2)
                     if (i == j)
-                        occurrences++;
-                result2 += i * occurrences;
-            }
+                        result2 += i;
             System.out.println(result2);
         } catch (
                 IOException e) {

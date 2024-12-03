@@ -22,18 +22,19 @@ public class Day2 {
 
                 if (isSave(numbers))
                     result1++;
-
-                for (int i = 0; i < numbers.size(); i++) {
-                    List<Integer> copy = new ArrayList<>(numbers);
-                    copy.remove(i);
-                    if (isSave(copy)) {
-                        result2++;
-                        break;
+                else
+                    for (int i = 0; i < numbers.size(); i++) {
+                        List<Integer> copy = new ArrayList<>(numbers);
+                        copy.remove(i);
+                        if (isSave(copy)) {
+                            result2++;
+                            break;
+                        }
                     }
-                }
             }
 
             System.out.println(result1);
+            result2 += result1;
             System.out.println(result2);
         } catch (
                 IOException e) {
