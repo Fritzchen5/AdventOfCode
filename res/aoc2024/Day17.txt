@@ -1,0 +1,15 @@
+Register A: 52884621
+Register B: 0
+Register C: 0
+
+Program: 2,4,1,3,7,5,4,7,0,3,1,5,5,5,3,0
+
+2, 4: B = lowest 3 bits of A
+1, 3: inverts last 2 bits of B
+7, 5: C = A / 2^B = right shift A by B bits
+4, 7: B = C xor B
+0, 3: right shift A by 3 bits
+1, 5: inverts third to last and last bit of B
+5, 5: output last 3 bits of B
+
+3, 0: jump to beginning if A != 0
