@@ -40,7 +40,7 @@ public class Day17 {
                     Set<Long> goodPrefix = new HashSet<>();
                     goodPrefix.add(0L);
                     for (int i = code.length - 1; i >= 0; i--) {
-                        //System.out.print("index: " + index + ", good Prefix length: " + goodPrefix.size());
+                        //System.out.print("index: " + i + ", good Prefix length: " + goodPrefix.size());
                         //System.out.println(", min: " + Collections.min(goodPrefix));
                         Set<Long> oldPrefix = new HashSet<>(goodPrefix);
                         goodPrefix.clear();
