@@ -61,8 +61,7 @@ public class Day6 {
                         if (Character.isDigit(chars[k])) chars[k] = '.';
             }
             System.out.println(result2);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

@@ -85,8 +85,7 @@ public class Day15 {
                     if (warehouse2.get(i)[j] == '[')
                         result2 += 100 * i + j;
             System.out.println(result1 + "\n" + result2);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

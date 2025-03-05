@@ -32,8 +32,7 @@ public class Day1 {
                     if (i == j)
                         result2 += i;
             System.out.println(result2);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

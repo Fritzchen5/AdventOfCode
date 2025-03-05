@@ -51,8 +51,7 @@ public class Day8 {
             }
             int result1 = foundX1.size(), result2 = foundX2.size();
             System.out.println(result1 + "\n" + result2);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

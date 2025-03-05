@@ -28,8 +28,7 @@ public class Day10 {
                 }
             }
             System.out.println(result1 + "\n" + result2);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

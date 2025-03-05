@@ -66,8 +66,7 @@ public class Day17 {
                     //System.out.println(goodPrefix);
                 }
             }
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

@@ -60,8 +60,7 @@ public class Day11 {
             for (Map.Entry<BigInteger, BigInteger> set : map.entrySet())
                 result2 = result2.add(set.getValue());
             System.out.println(result2);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

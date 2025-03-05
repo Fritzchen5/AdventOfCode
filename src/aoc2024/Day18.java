@@ -3,7 +3,9 @@ package aoc2024;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class Day18 {
     public static int size = 71;
@@ -61,8 +63,7 @@ public class Day18 {
             }
             System.out.println(result1);
             System.out.println(result2);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }

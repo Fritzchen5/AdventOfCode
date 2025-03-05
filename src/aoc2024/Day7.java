@@ -21,8 +21,7 @@ public class Day7 {
                 result2 += tryLine(numbers, false);
             }
             System.out.println(result1 + "\n" + result2);
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
