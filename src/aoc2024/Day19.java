@@ -14,34 +14,23 @@ public class Day19 {
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
             Set<String> towels = new HashSet<>();
-            int result1 = 0;
+            long result1 = 0, result2 = 0;
             for (int i = 1; (line = reader.readLine()) != null; i++) {
-                if (i == 1) towels.addAll(Arrays.asList(line.split(", ")));
-                else if (i == 2) continue;
+                if (i == 1 || i == 2)
+                    towels.addAll(Arrays.asList(line.split(", ")));
                 else {
-                    boolean possible = tryDesired(line, 0, line.length() - 1, towels);
-                    System.out.println(line + " " + possible);
-                    if (possible)
-                        result1++;
+                    long[] possible = new long[line.length()];
+                    for (int j = 0; j < line.length(); j++)
+                        for (int k = 0; k <= j; k++)
+                            if ((k == 0 || possible[k - 1] > 0) && towels.contains(line.substring(k, j + 1)))
+                                possible[j] += (k == 0) ? 1 : possible[k - 1];
+                    if (possible[line.length() - 1] > 0) result1++;
+                    result2 += possible[line.length() - 1];
                 }
             }
-            System.out.println(result1);
+            System.out.println(result1 + "\n" + result2);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-    }
-
-    private static boolean tryDesired(String s, int start, int end, Set<String> towels) {
-        //System.out.println(s + " " + start + " " + end);
-        String substring = s.substring(start, end + 1);
-        if (towels.contains(substring))
-            return true;
-        for (int i = 0; i < end - start; i++) {
-            if (tryDesired(s, start, start + i, towels) && tryDesired(s, start + i + 1, end, towels)) {
-                towels.add(substring);
-                return true;
-            }
-        }
-        return false;
     }
 }
